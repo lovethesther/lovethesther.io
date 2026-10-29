@@ -1,1 +1,349 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loveth Esther | AI/ML Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #faf9f6;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #171717;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #c9a45c;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            background: #f1ece2;
+        }
+
+        .hero h1 {
+            font-size: clamp(35px, 6vw, 58px);
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .highlight {
+            color: #9a793c;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            background: #171717;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        h2.section-title {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .about p {
+            max-width: 850px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 10px 16px;
+            border-radius: 4px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(240px, 1fr)
+            );
+            gap: 22px;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid #e5e1da;
+            padding: 25px;
+            border-radius: 6px;
+        }
+
+        .project-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            color: #89682d;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .fashion {
+            background: #f1ece2;
+        }
+
+        .contact {
+            background: #171717;
+            color: white;
+        }
+
+        .contact p {
+            margin-bottom: 12px;
+        }
+
+        .contact a {
+            color: #e0c58c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #ccc;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 0 12px 0 0;
+                display: inline-block;
+            }
+
+            .hero {
+                padding: 65px 8%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>LOVETH ESTHER</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#fashion">Fashion-Tech</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <p class="highlight">AI/ML | DATA | FASHION-TECH</p>
+
+        <h1>
+            Turning Data into Insights
+            and Ideas into Solutions.
+        </h1>
+
+        <p>
+            I'm Loveth Esther, an AI/ML practitioner and
+            fashion-tech entrepreneur exploring how
+            artificial intelligence and data can solve
+            problems and create practical solutions.
+        </p>
+
+        <a class="button" href="#projects">
+            Explore My Projects
+        </a>
+    </div>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I have a background in English Language Education
+            and am developing practical skills in Python,
+            SQL, data analysis, and machine learning.
+        </p>
+
+        <p>
+            I enjoy working with datasets, cleaning data,
+            exploring patterns, and building predictive
+            models through hands-on projects.
+        </p>
+
+        <p>
+            I am also the founder of LOVESTHER, a fashion
+            brand. My interests include applying AI and data
+            to fashion design, product development,
+            personalization, and business operations.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Scikit-learn</span>
+            <span>Data Cleaning</span>
+            <span>Data Analysis</span>
+            <span>Machine Learning</span>
+            <span>Jupyter Notebook</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>California House Price Prediction</h3>
+
+                <p>
+                    A machine learning project exploring
+                    housing data to predict house prices.
+                </p>
+
+                <p>Tools: Python, Pandas, Scikit-learn</p>
+
+                <a href="https://github.com/YOUR-USERNAME">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Titanic Survival Prediction</h3>
+
+                <p>
+                    A classification project exploring
+                    passenger data and predicting survival.
+                </p>
+
+                <p>Tools: Python, Pandas, Machine Learning</p>
+
+                <a href="https://github.com/YOUR-USERNAME">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Iris Flower Classification</h3>
+
+                <p>
+                    A supervised machine learning project
+                    classifying iris flowers using their
+                    measured features.
+                </p>
+
+                <p>Tools: Python, Scikit-learn</p>
+
+                <a href="https://github.com/YOUR-USERNAME">
+                    View Project
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="fashion" class="fashion">
+        <h2 class="section-title">AI Meets Fashion</h2>
+
+        <p>
+            Through LOVESTHER, I am interested in exploring
+            how AI and data can support fashion ideation,
+            product development, customer personalization,
+            and smarter business decisions.
+        </p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Let's Connect</h2>
+
+        <p>
+            I am open to learning opportunities,
+            collaborations, and projects in AI, data,
+            machine learning, and fashion-tech.
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/YOUR-USERNAME">
+                Visit My GitHub
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/">
+                Connect With Me
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Loveth Esther. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
